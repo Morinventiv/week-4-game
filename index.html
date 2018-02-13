@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Crystal Caper</title>
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+	<main class="container">
+		<section class="row">
+			<div class="col-md-4">
+				<h1 class="head1">Crystal Collector</h1>
+			</div>
+		</section>
+		<section class="row">
+			<div class="col-md-5 directionsDiv">
+				<p>
+					You will be given a random number at the start of the game.
+				</p>
+				<br>
+				<p>
+					There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+				</p>
+				<br>
+				<p>
+					You win the game by matching your total score to random number, you lose the game if your total score goes above the random
+					number.
+				</p>
+				<br>
+				<p>
+					The value of each crystal is hidden from you until you click on it.
+				</p>
+				<br>
+				<p>
+					Each time when the game starts, the game will change the values of each crystal
+				</p>
+			</div>
+		</section>
+		<section class="row">
+			<div class="col-md-3">
+				<div id="targetNum">The target number is:
+					<span id="target-number"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+
+				<div id="scorePanel">
+					<p>
+						<span id="winLosePanel"></span>
+					</p>
+					<p>Wins:
+						<span id="winPanel"></span>
+					</p>
+					<p>Losses:
+						<span id="losePanel"></span>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="row ">
+			<div class="col-md-2 crystalDiv">
+					<img src=".\assets\images\2-Star_Crystal.png" alt="purple-blue crystal" class="crystals" id="crystal1">
+			</div>
+			<div class="col-md-2 crystalDiv">
+					<img src=".\assets\images\Crystal_iso8.png" alt="purple-blue crystal" class="crystals" id="crystal2">
+			</div>
+			<div class="col-md-2 crystalDiv">
+					<img src=".\assets\images\crystal_single_mutant.png" alt="purple-blue crystal" class="crystals" id="crystal3">
+			</div>
+			<div class="col-md-2 crystalDiv">
+					<img src=".\assets\images\crystal_skill.png" alt="purple-blue crystal" class="crystals" id="crystal4">
+			</div>
+		</section>
+		
+		<section class="row">
+			<div class="col-md-3 scoreText">
+					<p>Your total score is:</p>
+					<p><span id='player-score'></span></p>
+			</div>
+		</section>
+		<!-- <section class="row">
+			<div class="col-md-3">
+				<div id="player-score"></div>
+			</div>
+		</section> -->
+	</main>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="./assets/javascript/game.js"></script>
+
 </body>
+
 </html>
